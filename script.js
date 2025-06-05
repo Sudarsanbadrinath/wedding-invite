@@ -5,14 +5,14 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
     let location = document.getElementById('location').value;
     let arrivingByCar = document.getElementById('arriving-by-car').value;
 
-    // Create a FormData object
+    // Create a FormData object and append the form data
     var formData = new FormData();
     formData.append('name', guestName);
     formData.append('location', location);
     formData.append('arriving-by-car', arrivingByCar);
 
-    // Send the form data to Google Apps Script Web App URL
-    fetch('https://script.google.com/macros/s/AKfycbzu4w9Qb-912XIS9U279YHIHacAam4Rl53nr3x-gKjrklY5XR7K2Y3pSi_eisSY9SJF5g/exec', {
+    // Send the data to Google Apps Script Web App URL
+    fetch('https://script.google.com/macros/s/AKfycbxpT7Z4kToUG4g8MkN_1k93EQIbf1nnzaUMu8diXcxdVsG3mK3xI4wtGQGCE4SYKpSfZg/exec', {
         method: 'POST',
         body: formData
     })
