@@ -11,6 +11,11 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
     formData.append('location', location);
     formData.append('arriving-by-car', arrivingByCar);
 
+    // Log the FormData to verify it's correct (for debugging)
+    for (var pair of formData.entries()) {
+        console.log(pair[0]+ ': ' + pair[1]); 
+    }
+
     // Send the data to Google Apps Script Web App URL
     fetch('https://script.google.com/macros/s/AKfycbxpT7Z4kToUG4g8MkN_1k93EQIbf1nnzaUMu8diXcxdVsG3mK3xI4wtGQGCE4SYKpSfZg/exec', {
         method: 'POST',
