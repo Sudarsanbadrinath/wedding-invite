@@ -12,7 +12,7 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
     formData.append('arriving-by-car', arrivingByCar);
 
     // Send the data to Google Apps Script
-    fetch('<https://script.google.com/macros/library/d/16F6JBd_n8-x6qj-FdUxdfrBbbLcunRLmzeuGZpuiMPyxj6aIKjDBz8BG/2>', {
+    fetch('<https://script.google.com/macros/s/AKfycbzdGs4lQyKfcMbboaB7R_tRTb1O463rpOGNNC4wNGv-/dev>', {
         method: 'POST',
         body: formData
     })
