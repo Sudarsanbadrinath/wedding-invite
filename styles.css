@@ -45,7 +45,7 @@ p {
     display: block;
     font-size: 18px;
     margin-top: 10px;
-    color: #FFD700;  /* Same color as the "You're Invited" text */
+    color: #B22222;  /* Same color as "Please RSVP" text */
 }
 
 .invitation-form input, .invitation-form select {
