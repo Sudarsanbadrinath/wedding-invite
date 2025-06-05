@@ -11,17 +11,21 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
     formData.append('location', location);
     formData.append('arriving-by-car', arrivingByCar);
 
-    // Send the data to Google Apps Script
-    fetch('<https://script.google.com/macros/s/AKfycbzu4w9Qb-912XIS9U279YHIHacAam4Rl53nr3x-gKjrklY5XR7K2Y3pSi_eisSY9SJF5g/exec>', {
+    // Send the form data to Google Apps Script Web App URL
+    fetch('https://script.google.com/macros/s/AKfycbzu4w9Qb-912XIS9U279YHIHacAam4Rl53nr3x-gKjrklY5XR7K2Y3pSi_eisSY9SJF5g/exec', {
         method: 'POST',
         body: formData
     })
     .then(response => response.json())
     .then(data => {
-        alert('Thank you for your RSVP, ' + guestName + '!');
+        if (data.result === 'success') {
+            alert(`Thank you, ${guestName}! Your RSVP has been submitted.`);
+        } else {
+            alert('Something went wrong. Please try again.');
+        }
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Something went wrong. Please try again later.');
+        alert('There was an issue with your submission. Please try again.');
     });
 });
