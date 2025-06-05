@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Reception Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>You're Invited to Our Wedding Reception!</h1>
+        <p>Join us for an evening of celebration, love, and joy.</p>
+    </header>
+
+    <section class="invitation-form">
+        <h2>Please RSVP</h2>
+        <form id="rsvp-form">
+            <label for="guest-name">Your Name:</label>
+            <input type="text" id="guest-name" name="guest-name" placeholder="Enter your name" required>
+
+            <label for="location">Where are you coming from?</label>
+            <input type="text" id="location" name="location" placeholder="Enter your location" required>
+
+            <label for="arriving-by-car">Will you be coming by car?</label>
+            <select id="arriving-by-car" name="arriving-by-car">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Submit RSVP</button>
+        </form>
+    </section>
+
+    <section class="venue-details">
+        <h2>Venue Information</h2>
+        <p>Join us at <strong>New Woodlands, Chennai</strong> for our Wedding Reception</p>
+        <p><strong>Event Time:</strong> 6:00 PM - 11:00 PM</p>
+        <a href="https://www.google.com/maps?q=New+Woodlands,+Chennai" target="_blank">Click here for Google Maps</a>
+    </section>
+
+    <footer>
+        <p>We look forward to celebrating with you!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #f0c27b, #4b1248);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.invitation-form {
+    margin: 20px auto;
+    width: 60%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invitation-form h2 {
+    text-align: center;
+    color: #4b1248;
+}
+
+.invitation-form label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.invitation-form input, .invitation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4b1248;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #7a3e7b;
+}
+
+.venue-details {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.venue-details a {
+    color: #4b1248;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #4b1248;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer p {
+    margin: 0;
+}
