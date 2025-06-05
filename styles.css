@@ -1,7 +1,6 @@
-
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f3f3f3;
     color: #333;
     margin: 0;
@@ -93,4 +92,15 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Additional Styles for Better Layout */
+ul {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+ul li {
+    margin: 5px 0;
 }
